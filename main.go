@@ -5,11 +5,10 @@ import (
 	"os"
 
 	"github.com/gen2brain/malgo"
-	"github.com/ultraderek/sttserver/audioio"
 )
 
 func main() {
-	audioio.Print("yourmom")
+
 	ctx, err := malgo.InitContext(nil, malgo.ContextConfig{}, func(message string) {
 		fmt.Printf("LOG <%v>\n", message)
 	})
