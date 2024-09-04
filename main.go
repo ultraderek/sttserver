@@ -1,4 +1,4 @@
-package sttserver
+package main
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"github.com/gen2brain/malgo"
 )
 
-func sttserver() {
+func main() {
 
 	ctx, err := malgo.InitContext(nil, malgo.ContextConfig{}, func(message string) {
 		fmt.Printf("LOG <%v>\n", message)
