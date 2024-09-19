@@ -2,6 +2,7 @@ package voice
 
 import (
 	"bytes"
+	"fmt"
 	"time"
 
 	"github.com/amitybell/piper"
@@ -11,14 +12,16 @@ import (
 	"github.com/gopxl/beep/wav"     // Import the wav package to decode the wav audio
 )
 
-func Example() {
+func Example(input string) {
 	tts, err := piper.New("", jenny.Asset)
 	if err != nil {
+		fmt.Println("error 0")
 		panic(err)
 	}
-	wavBytes, err := tts.Synthesize("A rainbow is a meteorological phenomenon that is caused by reflection, refraction and dispersion of light in water droplets resulting in a spectrum of light appearing in the sky.")
+	wavBytes, err := tts.Synthesize(input)
 
 	if err != nil {
+		fmt.Println("error 1")
 		panic(err)
 	}
 
@@ -26,6 +29,7 @@ func Example() {
 
 	streamer, format, err := wav.Decode(r)
 	if err != nil {
+		fmt.Println("error 2")
 		panic(err) // If there's an error, stop the program
 	}
 
