@@ -1,10 +1,11 @@
 package main
 
 import (
-	"github.com/ultraderek/sttserver/mic"
+	"github.com/ultraderek/sttserver/voice"
 )
 
 func main() {
-	mic.Example1()
+	voice.Example()
+	//mic.Example1()
 
 }

@@ -3,12 +3,16 @@ module github.com/ultraderek/sttserver
 go 1.23.0
 
 require (
+	github.com/amitybell/piper v0.0.0-20240130090909-b170e42b1e09
+	github.com/amitybell/piper-voice-jenny v0.0.0-20231118093224-dcf0d49e46b7
 	github.com/gen2brain/malgo v0.11.22
-	github.com/hajimehoshi/go-mp3 v0.3.4
-	github.com/youpy/go-wav v0.3.2
 )
 
 require (
-	github.com/youpy/go-riff v0.1.0 // indirect
-	github.com/zaf/g711 v0.0.0-20190814101024-76a4a538f52b // indirect
+	github.com/adrg/xdg v0.4.0 // indirect
+	github.com/amitybell/piper-asset v0.0.0-20231030194325-d36a29e3b1fd // indirect
+	github.com/amitybell/piper-bin-linux v0.0.0-20231118093037-92b3de178ad8 // indirect
+	github.com/amitybell/piper-bin-windows v0.0.0-20231118093113-cc2cef2f6b74 // indirect
+	github.com/klauspost/compress v1.17.3 // indirect
+	golang.org/x/sys v0.14.0 // indirect
 )
